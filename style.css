@@ -1,0 +1,152 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Page heading */
+h1 {
+    margin-bottom: 8px;
+    color: #0f766e;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 28px;
+    color: #64748b;
+    text-align: center;
+}
+
+/* Search form */
+.search-card,
+.results-card {
+    padding: 28px;
+    margin-bottom: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.search-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.search-row {
+    display: flex;
+    gap: 12px;
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+/* Search button */
+button {
+    padding: 13px 22px;
+    color: #ffffff;
+    background: #0f766e;
+    border: none;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #115e59;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Error message */
+#error {
+    margin: 12px 0 0;
+    color: #dc2626;
+    font-size: 0.9rem;
+}
+
+/* Results section */
+.results-card h2 {
+    margin-top: 0;
+    color: #0f766e;
+}
+
+#wordTitle {
+    margin-bottom: 16px;
+    color: #0f766e;
+    font-size: 1.8rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.results-card p {
+    padding: 10px 12px;
+    margin: 8px 0;
+    background: #f8fafc;
+    border-left: 3px solid #99f6e4;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+/* Source link text */
+#source {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Mobile layout */
+@media (max-width: 520px) {
+    body {
+        padding: 24px 12px;
+    }
+
+    .search-card,
+    .results-card {
+        padding: 20px;
+    }
+
+    .search-row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}

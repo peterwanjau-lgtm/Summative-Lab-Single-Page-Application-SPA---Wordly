@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Funtionality</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Functionality</h1>
+        <p class="intro">
+            Discover definitions, pronunciations, synonyms and more.
+        </p>
+
+        <section class="search-card">
+                <label for="word">Enter a word to explore</label>
+
+                <div class="search-row">
+                    <input
+                        type="text"
+                        id="word"
+                        placeholder="e.g. hello"
+                    >
+
+                    <button type="submit" id="getData">
+                        Check Word
+                    </button>
+                </div>
+
+                <p id="error"></p>
+        </section>
+
+        <section class="results-card">
+            <h2>Dictionary Results</h2>
+
+            <p id="wordTitle"></p>
+            <p id="pronunciation"></p>
+            <p id="partOfSpeech"></p>
+            <p id="definition"></p>
+            <p id="examples"></p>
+            <p id="synonyms"></p>
+            <p id="antonyms"></p>
+            <p id="tags"></p>
+            <p id="wordForms"></p>
+            <p id="source"></p>
+        </section>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
